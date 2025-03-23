@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="110dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/shape_rounded_var"
+        android:text="Править"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_rounded_var"
+        android:text="+"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Список будильников"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:divider="#FFFFFF"
+    android:dividerHeight="1dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
